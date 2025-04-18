@@ -6,8 +6,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaServiceConsumer {
 
+    //adding the comments
     @KafkaListener(topics = "first-config-topic-1", groupId = "my-consumer-group")
     public void consumeMessage(String message) {
-        System.out.println("Consumed message: " + message);
+        System.out.println("Consumed this new message: " + message);
     }
 }
